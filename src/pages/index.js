@@ -12,10 +12,10 @@ export default function Home() {
 
       <main className="max-w-2xl mx-auto mt-12">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Hi, I'm <span className="text-indigo-600 dark:text-indigo-500">huedev</span>!
+          Hi, I&apos;m <span className="text-indigo-600 dark:text-indigo-500">huedev</span>!
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I make games and art. I also enjoy tinkering with websites. I'm currently working on a game called <strong>Knifemare</strong>.
+          I make games and art. I also enjoy tinkering with websites. I&apos;m currently working on a game called <strong>Knifemare</strong>.
         </p>
         <div className="mt-6 flex gap-6">
           <Link href="https://mastodon.gamedev.place/@hue" rel="me noopener noreferrer" target="_blank" aria-label="Follow on Mastodon">
