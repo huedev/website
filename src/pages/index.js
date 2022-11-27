@@ -9,7 +9,7 @@ import {
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link className="group -m-1 p-1" rel="me noopener noreferrer" target="_blank" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
@@ -35,22 +35,16 @@ export default function Home() {
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://mastodon.gamedev.place/@hue"
-              rel="me noopener noreferrer"
-              target="_blank"
               aria-label="Follow me on Mastodon"
               icon={MastodonIcon}
             />
             <SocialLink
               href="https://huedev.itch.io/"
-              rel="me noopener noreferrer"
-              target="_blank"
               aria-label="Follow me on itch.io"
               icon={ItchIcon}
             />
             <SocialLink
               href="https://github.com/huedev"
-              rel="me noopener noreferrer"
-              target="_blank"
               aria-label="Follow me on GitHub"
               icon={GitHubIcon}
             />
