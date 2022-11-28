@@ -50,7 +50,8 @@ function Project({project}) {
             <Image
               src={project.image}
               alt=""
-              className="h-48 transition group-hover:brightness-90 dark:group-hover:brightness-110 object-none object-center"
+              className="h-48 transition group-hover:brightness-90 dark:group-hover:brightness-110 object-none object-center rendering-pixelated"
+              quality={100}
               unoptimized
             />
           </div>
@@ -60,7 +61,7 @@ function Project({project}) {
             <Image
               src={project.logo}
               alt=""
-              className="h-8 w-8 rounded-md"
+              className="h-8 w-8 rounded-md rendering-pixelated"
               unoptimized
             />
           </div>
@@ -93,7 +94,7 @@ export default function Home() {
                 <Image
                   src={logoHuedev}
                   alt=""
-                  className="h-24 w-24 rounded-2xl sm:h-32 sm:w-32"
+                  className="h-24 w-24 rounded-2xl sm:h-32 sm:w-32 rendering-pixelated"
                   unoptimized
                 />
               </div>

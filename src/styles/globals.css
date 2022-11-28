@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .rendering-pixelated {
+        image-rendering: pixelated;
+    }
+}
