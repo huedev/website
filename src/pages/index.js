@@ -50,7 +50,7 @@ function Project({project}) {
             <Image
               src={project.image}
               alt=""
-              className="h-48 transition group-hover:brightness-75 object-none object-center"
+              className="h-48 transition group-hover:brightness-90 dark:group-hover:brightness-110 object-none object-center"
               unoptimized
             />
           </div>
