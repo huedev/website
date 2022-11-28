@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import { Footer } from '../components/Footer'
 import {
   MastodonIcon,
   ItchIcon,
@@ -162,6 +163,7 @@ export default function Home() {
               ))}
             </ul>
           </section>
+          <Footer />
         </div>
       </main>
     </>
