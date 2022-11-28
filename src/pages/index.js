@@ -65,7 +65,7 @@ function Project({project}) {
             />
           </div>
           <div className="flex flex-col ml-4">
-            <h3 className="text-base font-semibold text-zinc-00 dark:text-zinc-100 sm:">
+            <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
               {project.name}
             </h3>
             <p className="relative text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
