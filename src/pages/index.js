@@ -49,11 +49,11 @@ function ShowcaseProject({project}) {
             unoptimized
           />
         </div>
-        <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+        <h2 className="mt-4 text-base font-semibold text-zinc-800 dark:text-zinc-100">
           {project.name}
         </h2>
-        <p className="relative mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
-        <p className="relative mt-6 flex items-center text-sm font-medium text-zinc-400 transition group-hover:text-indigo-600 dark:text-zinc-200 dark:group-hover:text-indigo-500">
+        <p className="relative text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
+        <p className="relative mt-4 flex items-center text-sm font-medium text-zinc-400 transition group-hover:text-indigo-600 dark:text-zinc-200 dark:group-hover:text-indigo-500">
           <LinkIcon className="h-5 w-5 flex-none" />
           <span className="ml-1">{project.link.label}</span>
         </p>
@@ -136,6 +136,7 @@ export default function Home() {
               />
             </div>
           </section>
+          
           <section className="pt-10">
             <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-2xl">Projects</h2>
             <ul
@@ -149,7 +150,6 @@ export default function Home() {
                 />
               ))}
             </ul>
-
             <ul
               role="list"
               className="grid grid-cols-1 gap-x-4 gap-y-4 mt-4"
