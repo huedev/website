@@ -10,24 +10,25 @@ import {
 } from '../components/SocialIcons'
 import logoHuedev from '../images/huedev.png'
 import logoKnifemare from '../images/knifemare.png'
+import imageKnifemare from '../images/knifemare_gameplay.png'
 import logoTextbox from '../images/textbox.png'
 
 const projects = [
   {
     name: 'Knifemare',
     description:
-      'A short and sweet action platformer about throwing and catching knives as a nightmare hunter. Currently in development, with new info coming soon!',
-    link: { href: 'https://huedev.itch.io/', label: 'itch.io' },
+      'A short and sweet action platformer about throwing and catching knives as a nightmare hunter. Currently in development with new info coming soon!',
+    link: 'https://huedev.itch.io/',
     logo: logoKnifemare,
-    showcase: true,
+    image: imageKnifemare,
   },
   {
     name: 'Textbox',
     description:
-      'A web-based text manipulation tool.',
-    link: { href: 'https://textbox.huedev.me/', label: 'huedev.me' },
+      'A web app for manipulating text, lists, and other data.',
+    link: 'https://textbox.huedev.me/',
     logo: logoTextbox,
-    showcase: false,
+    image: '',
   },
 ]
 
@@ -39,36 +40,22 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function ShowcaseProject({project}) {
-  return (
-    <li className="group relative flex flex-col items-stretch">
-      <Link href={project.link.href} className="p-4 h-full rounded-2xl bg-zinc-100 transition hover:bg-zinc-200 dark:bg-zinc-800/50 hover:dark:bg-zinc-700/50">
-        <div className="relative flex h-8 w-8 items-center justify-center shrink-0">
-          <Image
-            src={project.logo}
-            alt=""
-            className="h-8 w-8 rounded-md"
-            unoptimized
-          />
-        </div>
-        <h2 className="mt-4 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-          {project.name}
-        </h2>
-        <p className="relative text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
-        <p className="relative mt-4 flex items-center text-sm font-medium text-zinc-400 transition group-hover:text-indigo-600 dark:text-zinc-200 dark:group-hover:text-indigo-500">
-          <LinkIcon className="h-5 w-5 flex-none" />
-          <span className="ml-1">{project.link.label}</span>
-        </p>
-      </Link>
-    </li>
-  )
-}
-
 function Project({project}) {
   return (
     <li className="group relative flex flex-col items-stretch">
-      <Link href={project.link.href} className="p-4 flex flex-row items-center gap-x-4 justify-between h-full rounded-2xl bg-zinc-100 transition hover:bg-zinc-200 dark:bg-zinc-800/50 hover:dark:bg-zinc-700/50" key={project.name}>
-        <div className="flex flex-row items-center">
+      <Link href={project.link} className="p-4 flex flex-col gap-x-4 h-full overflow-hidden rounded-2xl bg-zinc-100 transition hover:bg-zinc-200 dark:bg-zinc-800/50 hover:dark:bg-zinc-700/50" key={project.name}>
+        {
+          project.image &&
+          <div className="relative flex -mx-4 -mt-4 items-center justify-center shrink-0 mb-4">
+            <Image
+              src={project.image}
+              alt=""
+              className="h-48 transition group-hover:brightness-75 object-none object-center"
+              unoptimized
+            />
+          </div>
+        }
+        <div className="flex flex-row">
           <div className="relative flex h-8 w-8 items-center justify-center shrink-0">
             <Image
               src={project.logo}
@@ -78,27 +65,14 @@ function Project({project}) {
             />
           </div>
           <div className="flex flex-col ml-4">
-            <h2 className="text-base font-semibold text-zinc-00 dark:text-zinc-100">
+            <h3 className="text-base font-semibold text-zinc-00 dark:text-zinc-100 sm:">
               {project.name}
-            </h2>
+            </h3>
             <p className="relative text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{project.description}</p>
           </div>
         </div>
-        <p className="relative flex items-center text-sm font-medium text-zinc-400 transition group-hover:text-indigo-600 dark:text-zinc-200 dark:group-hover:text-indigo-500">
-          <LinkIcon className="h-5 w-5 flex-none" />
-          <span className="ml-1">{project.link.label}</span>
-        </p>
       </Link>
     </li>
-  )
-}
-
-function LinkIcon(props) {
-  return (
-    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z" />
-      <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z" />
-    </svg>
   )
 }
 
@@ -107,7 +81,7 @@ export default function Home() {
     <>
       <Head>
         <title>huedev</title>
-        <meta name="description" content="I make games and art! I also enjoy tinkering with websites." />
+        <meta name="description" content="Hi, I'm huedev! I make games and art. I also enjoy tinkering with websites." />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -119,7 +93,7 @@ export default function Home() {
                 <Image
                   src={logoHuedev}
                   alt=""
-                  className="h-24 w-24 rounded-xl sm:h-32 sm:w-32"
+                  className="h-24 w-24 rounded-2xl sm:h-32 sm:w-32"
                   unoptimized
                 />
               </div>
@@ -155,20 +129,9 @@ export default function Home() {
             <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-2xl">Projects</h2>
             <ul
               role="list"
-              className="grid grid-cols-1 gap-x-4 gap-y-4 mt-6"
+              className="grid grid-cols-1 gap-x-4 gap-y-4 mt-8"
             >
-              {projects.filter(project => project.showcase).map((project) => (
-                <ShowcaseProject
-                  project={project}
-                  key={project.name}
-                />
-              ))}
-            </ul>
-            <ul
-              role="list"
-              className="grid grid-cols-1 gap-x-4 gap-y-4 mt-4"
-            >
-              {projects.filter(project => !project.showcase).map((project) => (
+              {projects.map((project) => (
                 <Project
                   project={project}
                   key={project.name}
