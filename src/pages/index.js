@@ -112,7 +112,7 @@ export default function Home() {
           </div>
           <div className="ml-8">
             <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              Hi, I&apos;m <span className="text-indigo-600 dark:text-indigo-500">huedev</span>!
+              Hi, I&apos;m <span className="text-amber-600 dark:text-amber-500">huedev</span>!
             </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
               I make games and art. I also enjoy tinkering with websites. I&apos;m currently working on a game called <strong>Knifemare</strong>.

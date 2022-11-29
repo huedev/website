@@ -7,7 +7,7 @@ function NavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="transition hover:text-indigo-500 dark:hover:text-indigo-400"
+      className="transition hover:text-amber-600 dark:hover:text-amber-500"
     >
       {children}
     </Link>
@@ -81,8 +81,8 @@ function ModeToggle() {
       className="group transition"
       onClick={toggleMode}
     >
-      <SunIcon className="h-6 w-6 flex-none text-zinc-600 group-hover:text-indigo-500 dark:hidden" />
-      <MoonIcon className="hidden h-6 w-6 flex-none text-zinc-400 group-hover:text-indigo-400 dark:block" />
+      <SunIcon className="h-6 w-6 flex-none text-zinc-600 group-hover:text-amber-600 dark:hidden" />
+      <MoonIcon className="hidden h-6 w-6 flex-none text-zinc-400 group-hover:text-amber-500 dark:block" />
     </button>
   )
 }
