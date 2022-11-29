@@ -165,6 +165,29 @@ export default function Home() {
           ))}
         </ul>
       </section>
+
+      <section className="pt-10">
+        <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-2xl">Latest Post</h2>
+        <div className="group relative flex flex-col items-stretch mt-6">
+          <Link href="/blog" className="p-4 flex flex-col gap-x-4 h-full overflow-hidden rounded-2xl bg-zinc-100 transition hover:bg-zinc-200 dark:bg-zinc-800/50 hover:dark:bg-zinc-700/50">
+            <div className="flex flex-col-reverse justify-between gap-4 md:flex-row">
+              <div className="flex flex-col">
+                <div className="flex flex-row items-center gap-1">
+                  <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                    Rewriting Knifemare in Godot
+                  </h3>
+                </div>
+                <p className="relative text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  This is where I&apos;ll be posting game devlogs and other writing.
+                </p>
+              </div>
+              <p className="relative text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                11/29/2022
+              </p>
+            </div>
+          </Link>
+        </div>
+      </section>
     </>
   )
 }

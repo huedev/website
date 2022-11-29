@@ -7,7 +7,7 @@ export default function BlogIndex({ posts }) {
         <title>Blog - huedev</title>
         <meta
           name="description"
-          content=""
+          content="This is where I&apos;ll be posting game devlogs and other writing."
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
@@ -16,11 +16,11 @@ export default function BlogIndex({ posts }) {
           Blog
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I make games and art. I also enjoy tinkering with websites. I&apos;m currently working on a game called <strong>Knifemare</strong>.
+          This is where I&apos;ll be posting game devlogs and other writing.
         </p>
       </section>
       <article className="prose prose-zinc dark:prose-invert mt-20">
-        <h1>Garlic bread with cheese: What the science tells us</h1>
+        <h1>Rewriting Knifemare in Godot</h1>
         <p>
           For years parents have espoused the health benefits of eating garlic bread with cheese to their
           children, with the food earning such an iconic status in our culture that kids will often dress
