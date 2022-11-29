@@ -87,7 +87,7 @@ function ModeToggle() {
 export function Header() {
   return (
     <header className="my-16">
-      <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+      <div className="flex flex-row items-center justify-between gap-6">
         <div className="flex gap-6 font-medium text-zinc-800 dark:text-zinc-200">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
