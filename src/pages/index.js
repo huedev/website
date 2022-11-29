@@ -6,11 +6,11 @@ import {
   MastodonIcon,
   ItchIcon,
   GitHubIcon,
-} from '../components/SocialIcons'
-import logoHuedev from '../images/huedev.png'
-import logoKnifemare from '../images/knifemare.png'
-import imageKnifemare from '../images/knifemare_gameplay.png'
-import logoTextbox from '../images/textbox.png'
+} from '@/components/SocialIcons'
+import logoHuedev from '@/images/huedev.png'
+import logoKnifemare from '@/images/knifemare.png'
+import imageKnifemare from '@/images/knifemare_gameplay.png'
+import logoTextbox from '@/images/textbox.png'
 
 const projects = [
   {

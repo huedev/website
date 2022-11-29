@@ -90,7 +90,6 @@ export function Header() {
       <div className="flex flex-row items-center justify-between gap-6">
         <div className="flex gap-6 font-medium text-zinc-800 dark:text-zinc-200">
           <NavLink href="/">Home</NavLink>
-          <NavLink href="/about">About</NavLink>
           <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/uses">Uses</NavLink>
         </div>
