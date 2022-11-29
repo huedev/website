@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { Footer } from '../components/Footer'
 import {
   MastodonIcon,
   ItchIcon,
@@ -42,9 +41,22 @@ function SocialLink({ icon: Icon, ...props }) {
 
 function ExternalLinkIcon(props) {
   return (
-    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" {...props}>
-      <path fillRule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clipRule="evenodd" />
-      <path fillRule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clipRule="evenodd" />
+    <svg
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+        clipRule="evenodd"
+      />
+      <path
+        fillRule="evenodd"
+        d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+        clipRule="evenodd"
+      />
     </svg>
   )
 }
@@ -101,63 +113,58 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className="mx-auto max-w-7xl pt-12 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl">
-          <section>
-            <div className="flex">
-              <div className="relative flex h-24 w-24 items-center justify-center shrink-0 sm:h-32 sm:w-32">
-                <Image
-                  src={logoHuedev}
-                  alt=""
-                  className="h-24 w-24 rounded-2xl sm:h-32 sm:w-32 rendering-pixelated"
-                  unoptimized
-                />
-              </div>
-              <div className="ml-8">
-                <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-                  Hi, I&apos;m <span className="text-indigo-600 dark:text-indigo-500">huedev</span>!
-                </h1>
-                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  I make games and art. I also enjoy tinkering with websites. I&apos;m currently working on a game called <strong>Knifemare</strong>.
-                </p>
-                <div className="mt-6 flex gap-6">
-                  <SocialLink
-                    href="https://mastodon.gamedev.place/@hue"
-                    aria-label="Follow me on Mastodon"
-                    icon={MastodonIcon}
-                  />
-                  <SocialLink
-                    href="https://huedev.itch.io/"
-                    aria-label="Follow me on itch.io"
-                    icon={ItchIcon}
-                  />
-                  <SocialLink
-                    href="https://github.com/huedev"
-                    aria-label="Follow me on GitHub"
-                    icon={GitHubIcon}
-                  />
-                </div>
-              </div>
+      <section>
+        <div className="flex">
+          <div className="relative flex h-24 w-24 items-center justify-center shrink-0 sm:h-32 sm:w-32">
+            <Image
+              src={logoHuedev}
+              alt=""
+              className="h-24 w-24 rounded-2xl sm:h-32 sm:w-32 rendering-pixelated"
+              unoptimized
+            />
+          </div>
+          <div className="ml-8">
+            <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+              Hi, I&apos;m <span className="text-indigo-600 dark:text-indigo-500">huedev</span>!
+            </h1>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              I make games and art. I also enjoy tinkering with websites. I&apos;m currently working on a game called <strong>Knifemare</strong>.
+            </p>
+            <div className="mt-6 flex gap-6">
+              <SocialLink
+                href="https://mastodon.gamedev.place/@hue"
+                aria-label="Follow me on Mastodon"
+                icon={MastodonIcon}
+              />
+              <SocialLink
+                href="https://huedev.itch.io/"
+                aria-label="Follow me on itch.io"
+                icon={ItchIcon}
+              />
+              <SocialLink
+                href="https://github.com/huedev"
+                aria-label="Follow me on GitHub"
+                icon={GitHubIcon}
+              />
             </div>
-          </section>
-          
-          <section className="pt-10">
-            <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-2xl">Projects</h2>
-            <ul
-              role="list"
-              className="grid grid-cols-1 gap-x-4 gap-y-4 mt-6"
-            >
-              {projects.map((project) => (
-                <Project
-                  project={project}
-                  key={project.name}
-                />
-              ))}
-            </ul>
-          </section>
-          <Footer />
+          </div>
         </div>
-      </main>
+      </section>
+      
+      <section className="pt-10">
+        <h2 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-2xl">Projects</h2>
+        <ul
+          role="list"
+          className="grid grid-cols-1 gap-x-4 gap-y-4 mt-6"
+        >
+          {projects.map((project) => (
+            <Project
+              project={project}
+              key={project.name}
+            />
+          ))}
+        </ul>
+      </section>
     </>
   )
 }
