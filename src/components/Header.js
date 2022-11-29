@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import logoHuedev from '@/images/huedev.png'
 
 function NavLink({ href, children }) {
   return (
@@ -86,15 +89,20 @@ function ModeToggle() {
 
 export function Header() {
   return (
-    <header className="my-16">
-      <div className="flex flex-row items-center justify-between gap-6">
-        <div className="flex gap-6 font-medium text-zinc-800 dark:text-zinc-200">
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/blog">Blog</NavLink>
-          <NavLink href="/uses">Uses</NavLink>
-        </div>
-        <ModeToggle />
+    <header className="flex flex-row justify-between gap-y-6 my-12">
+      <div className="flex flex-row items-center gap-6 font-medium text-zinc-800 dark:text-zinc-200">
+        <Link href="/" className="relative flex h-8 w-8 items-center justify-center shrink-0">
+          <Image
+            src={logoHuedev}
+            alt=""
+            className="h-8 w-8 rounded-md rendering-pixelated"
+            unoptimized
+          />
+        </Link>
+        <NavLink href="/blog">Blog</NavLink>
+        <NavLink href="/uses">Uses</NavLink>
       </div>
+      <ModeToggle />
     </header>
   )
 }

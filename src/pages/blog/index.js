@@ -19,8 +19,8 @@ export default function BlogIndex({ posts }) {
           This is where I&apos;ll be posting game devlogs and other writing.
         </p>
       </section>
-      <article className="prose prose-zinc dark:prose-invert mt-20">
-        <h1>Rewriting Knifemare in Godot</h1>
+      <article className="prose prose-zinc dark:prose-invert mt-16">
+        <h2>Rewriting Knifemare in Godot</h2>
         <p>
           For years parents have espoused the health benefits of eating garlic bread with cheese to their
           children, with the food earning such an iconic status in our culture that kids will often dress
