@@ -78,11 +78,11 @@ function ModeToggle() {
     <button
       type="button"
       aria-label="Toggle dark mode"
-      className="group transition"
+      className="group h-8 w-8 flex items-center justify-center rounded-md bg-zinc-200 transition hover:bg-zinc-300 dark:bg-zinc-800 hover:dark:bg-zinc-700 shrink-0"
       onClick={toggleMode}
     >
-      <SunIcon className="h-6 w-6 flex-none text-zinc-600 group-hover:text-amber-600 dark:hidden" />
-      <MoonIcon className="hidden h-6 w-6 flex-none text-zinc-400 group-hover:text-amber-500 dark:block" />
+      <SunIcon className="h-6 w-6 flex-none text-zinc-600 group-hover:text-zinc-700 dark:hidden" />
+      <MoonIcon className="hidden h-6 w-6 flex-none text-zinc-300 group-hover:text-zinc-400 dark:block" />
     </button>
   )
 }
@@ -91,7 +91,11 @@ export function Header() {
   return (
     <header className="flex flex-row justify-between gap-y-6 my-12">
       <div className="flex flex-row items-center gap-6 font-medium text-zinc-800 dark:text-zinc-200">
-        <Link href="/" className="group flex h-8 w-8 items-center justify-center shrink-0">
+        <Link
+          href="/"
+          aria-label="Home"
+          className="group flex h-8 w-8 items-center justify-center shrink-0"
+        >
           <Image
             src={logoHuedev}
             alt=""
