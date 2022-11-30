@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import logoHuedev from '@/images/huedev.png'
+import sunIcon from '@/images/sun.png'
+import moonIcon from '@/images/moon.png'
 
 function NavLink({ href, children }) {
   return (
@@ -16,39 +18,27 @@ function NavLink({ href, children }) {
 
 function SunIcon(props) {
   return (
-    <svg
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+    <div className="h-8 w-8 flex-none dark:hidden shrink-0" aria-hidden="true" {...props}>
+      <Image
+        src={sunIcon}
+        alt=""
+        className="h-8 w-8 rounded-md rendering-pixelated group-hover:brightness-110"
+        unoptimized
       />
-    </svg>
+    </div>
   )
 }
 
 function MoonIcon(props) {
   return (
-    <svg 
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="currentColor"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+    <div className="h-8 w-8 flex-none dark:hidden shrink-0" aria-hidden="true" {...props}>
+      <Image
+        src={moonIcon}
+        alt=""
+        className="h-8 w-8 rounded-md rendering-pixelated group-hover:brightness-90"
+        unoptimized
       />
-    </svg>
+    </div>
   )
 }
 
@@ -78,11 +68,11 @@ function ModeToggle() {
     <button
       type="button"
       aria-label="Toggle dark mode"
-      className="group h-8 w-8 flex items-center justify-center rounded-md bg-zinc-200 transition hover:bg-zinc-300 dark:bg-zinc-800 hover:dark:bg-zinc-700 shrink-0"
+      className="group h-8 w-8 flex items-center justify-center rounded-md shrink-0"
       onClick={toggleMode}
     >
-      <SunIcon className="h-6 w-6 flex-none text-zinc-600 group-hover:text-zinc-700 dark:hidden" />
-      <MoonIcon className="hidden h-6 w-6 flex-none text-zinc-300 group-hover:text-zinc-400 dark:block" />
+      <SunIcon className="hidden h-8 w-8 flex-none dark:block" />
+      <MoonIcon className="h-8 w-8 flex-none dark:hidden" />
     </button>
   )
 }
