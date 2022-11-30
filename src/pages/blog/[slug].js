@@ -10,9 +10,13 @@ import PostBody from '@/components/PostBody'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
+  
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+
+  const title = `${post.title} - huedev`
+  
   return (
     <>
       {router.isFallback ? (
@@ -21,7 +25,7 @@ export default function Post({ post, morePosts, preview }) {
         <>
           <Head>
             <title>
-              {post.title} - huedev
+              {title}
             </title>
             <link rel="icon" href="/favicon.png" />
           </Head>
