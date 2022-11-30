@@ -1,6 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
-export default function BlogIndex({ posts }) {
+import { getAllPosts } from '@/lib/api'
+import Post from '@/components/Post'
+import DateFormatter from '@/components/DateFormatter'
+
+export default function BlogIndex({posts}) {
   return (
     <>
       <Head>
@@ -18,19 +23,30 @@ export default function BlogIndex({ posts }) {
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           This is where I&apos;ll be posting game devlogs and other writing.
         </p>
+        <ul
+          role="list"
+          className="grid grid-cols-1 gap-x-4 gap-y-4 mt-6"
+        >
+          {posts.map((post) => (
+            <Post
+              post={post}
+              key={post.slug}
+            />
+          ))}
+        </ul>
       </section>
-      <article className="prose prose-zinc dark:prose-invert mt-16">
-        <h2>Rewriting Knifemare in Godot</h2>
-        <p>
-          For years parents have espoused the health benefits of eating garlic bread with cheese to their
-          children, with the food earning such an iconic status in our culture that kids will often dress
-          up as warm, cheesy loaf for Halloween.
-        </p>
-        <p>
-          But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-          springing up around the country.
-        </p>
-      </article>
     </>
   )
+}
+
+export const getStaticProps = async () => {
+  const posts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+  ])
+
+  return {
+    props: { posts },
+  }
 }

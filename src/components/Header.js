@@ -91,11 +91,11 @@ export function Header() {
   return (
     <header className="flex flex-row justify-between gap-y-6 my-12">
       <div className="flex flex-row items-center gap-6 font-medium text-zinc-800 dark:text-zinc-200">
-        <Link href="/" className="relative flex h-8 w-8 items-center justify-center shrink-0">
+        <Link href="/" className="group flex h-8 w-8 items-center justify-center shrink-0">
           <Image
             src={logoHuedev}
             alt=""
-            className="h-8 w-8 rounded-md rendering-pixelated"
+            className="h-8 w-8 rounded-md transition group-hover:brightness-90 dark:group-hover:brightness-110 rendering-pixelated"
             unoptimized
           />
         </Link>
