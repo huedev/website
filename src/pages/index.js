@@ -103,7 +103,15 @@ export default function Home({latestPost}) {
       </Head>
 
       <section>
-        <div className="flex">
+        <div className="flex flex-row gap-x-8">
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+              Hi, I&apos;m <span className="text-amber-600 dark:text-amber-500">huedev</span>!
+            </h1>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              I make games and art. I also enjoy tinkering with websites. Currently working on a game called <strong>Knifemare</strong>.
+            </p>
+          </div>
           <div className="relative flex h-24 w-24 items-center justify-center shrink-0 sm:h-32 sm:w-32">
             <Image
               src={logoHuedev}
@@ -111,14 +119,6 @@ export default function Home({latestPost}) {
               className="h-24 w-24 rounded-2xl sm:h-32 sm:w-32 rendering-pixelated"
               unoptimized
             />
-          </div>
-          <div className="ml-8">
-            <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-              Hi, I&apos;m <span className="text-amber-600 dark:text-amber-500">huedev</span>!
-            </h1>
-            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              I make games and art. I also enjoy tinkering with websites. I&apos;m currently working on a game called <strong>Knifemare</strong>.
-            </p>
           </div>
         </div>
       </section>
