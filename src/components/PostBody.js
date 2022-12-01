@@ -1,4 +1,4 @@
-export default function PostBody({content}) {
+export default function PostBody({ content }) {
   return (
     <div
       className="prose prose-zinc dark:prose-invert mt-12"

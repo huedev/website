@@ -22,7 +22,7 @@ function SunIcon(props) {
       <Image
         src={sunIcon}
         alt=""
-        className="h-8 w-8 rounded-md rendering-pixelated group-hover:brightness-110"
+        className="h-8 w-8 rounded-md transition group-hover:brightness-110 rendering-pixelated"
         unoptimized
       />
     </div>
@@ -35,7 +35,7 @@ function MoonIcon(props) {
       <Image
         src={moonIcon}
         alt=""
-        className="h-8 w-8 rounded-md rendering-pixelated group-hover:brightness-90"
+        className="h-8 w-8 rounded-md transition group-hover:brightness-90 rendering-pixelated"
         unoptimized
       />
     </div>
