@@ -1,11 +1,9 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 import { getAllPosts } from '@/lib/api'
 import Post from '@/components/Post'
-import DateFormatter from '@/components/DateFormatter'
 
-export default function BlogIndex({posts}) {
+export default function BlogIndex({ posts }) {
   return (
     <>
       <Head>

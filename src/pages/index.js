@@ -50,7 +50,7 @@ function ExternalLinkIcon(props) {
   )
 }
 
-function Project({project}) {
+function Project({ project }) {
   return (
     <li className="group relative flex flex-col items-stretch">
       <Link href={project.link.href} rel="noopener noreferrer" target="_blank" className="p-4 flex flex-col gap-x-4 h-full overflow-hidden rounded-2xl bg-zinc-100 transition hover:bg-zinc-200 dark:bg-zinc-800/50 hover:dark:bg-zinc-700/50" key={project.name}>
@@ -93,7 +93,7 @@ function Project({project}) {
   )
 }
 
-export default function Home({latestPost}) {
+export default function Home({ latestPost }) {
   return (
     <>
       <Head>

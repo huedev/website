@@ -8,7 +8,7 @@ import PostHeader from '@/components/PostHeader'
 import PostTitle from '@/components/PostTitle'
 import PostBody from '@/components/PostBody'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post }) {
   const router = useRouter()
   
   if (!router.isFallback && !post?.slug) {
