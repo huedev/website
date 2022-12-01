@@ -92,7 +92,7 @@ export default function Uses() {
           >
             There&apos;s not much to say about VS Code that hasn&apos;t already been said,
             but for my purposes it&apos;s fast and reliable for web development. I used to
-            even use it for note-taking before discovering Obsidian.
+            even take notes with it before discovering Obsidian.
           </Tool>
         </ToolsCategory>
         <ToolsCategory title="Art">

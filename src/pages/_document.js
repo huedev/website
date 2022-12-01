@@ -42,7 +42,7 @@ export default function Document() {
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
-      <body className="flex h-full flex-col bg-zinc-50 dark:bg-zinc-900">
+      <body className="flex h-full flex-col bg-white dark:bg-zinc-900">
         <Main />
         <NextScript />
       </body>
