@@ -1,12 +1,14 @@
 ---
 title: 'Building my Personal Site'
-date: '2022-11-27'
+date: '2022-12-19'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+Hey, welcome! I've been meaning to build a personal site for a while now, and with everything going on with Twitter, I'm happy to finally have my own little space on the internet.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+My first job out of college was my introduction to web development, and I enjoyed it a lot and hope to do more with the web in the future. I see this site as my first step towards cultivating a more healthy life online, relying less on whims of companies and embracing a return to the internet as it used to be, owned by individuals and grass-roots communities.
 
-## Lorem Ipsum
+I'm still figuring out what I want this site to be, but I plan on showing updates about projects that I'm working on and talking about things I'm interested in, such as games, the web, and pixel art. Ideally, I hope to write a post once a month, but I don't want to force it and take the fun out of it for myself if I don't have anything to say.
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+To cap things off for now, I'll just say that I'm currently working on my game, Knifemare. I had taken a long break from working on it after being unhappy with the gameplay and story, so I am scaling back the narrative elements to focus more on refining the game's mechanics. Progress is going well, and I hope to have something to show soon!
+
+Thanks for stopping by!

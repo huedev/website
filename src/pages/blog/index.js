@@ -10,7 +10,7 @@ export default function BlogIndex({ posts }) {
         <title>Blog - huedev</title>
         <meta
           name="description"
-          content="This is where I&apos;ll be posting game devlogs and other writing."
+          content="This is where I write about what I&apos;m working on and things that I&apos;m interested in."
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
@@ -19,7 +19,7 @@ export default function BlogIndex({ posts }) {
           Blog
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          This is where I&apos;ll be posting game devlogs and other writing.
+          This is where I write about what I&apos;m working on and things that I&apos;m interested in.
         </p>
         <ul
           role="list"
