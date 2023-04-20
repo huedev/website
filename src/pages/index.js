@@ -8,6 +8,7 @@ import logoHuedev from '@/images/huedev.png'
 import logoKnifemare from '@/images/knifemare.png'
 import imageKnifemare from '@/images/knifemare_gameplay.png'
 import logoTextbox from '@/images/textbox.png'
+import logoMatching from '@/images/matching.png'
 
 const projects = [
   {
@@ -19,9 +20,17 @@ const projects = [
     image: imageKnifemare,
   },
   {
+    name: 'Matching',
+    description:
+      'A matching game built with Next.js and TypeScript.',
+    link: { href: 'https://matching.huedev.me/', external: true },
+    logo: logoMatching,
+    image: '',
+  },
+  {
     name: 'Textbox',
     description:
-      'A web app for manipulating text, lists, and other data.',
+      'A web app for manipulating text, lists, and other data built with Create React App.',
     link: { href: 'https://textbox.huedev.me/', external: true },
     logo: logoTextbox,
     image: '',
