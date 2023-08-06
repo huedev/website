@@ -7,6 +7,8 @@ import Post from '@/components/Post'
 import logoHuedev from '@/images/huedev.png'
 import logoKnifemare from '@/images/knifemare.png'
 import imageKnifemare from '@/images/knifemare_gameplay.png'
+import logoBombercat from '@/images/bombercat.png'
+import imageBombercat from '@/images/bombercat_gameplay.png'
 import logoTextbox from '@/images/textbox.png'
 import logoMatching from '@/images/matching.png'
 
@@ -18,6 +20,14 @@ const projects = [
     link: { href: 'https://huedev.itch.io/', external: true },
     logo: logoKnifemare,
     image: imageKnifemare,
+  },
+  {
+    name: 'Bombercat',
+    description:
+      'An endless arcade game where you place and kick bombs to turn an endless wave of fish into sushi!',
+    link: { href: 'https://huedev.itch.io/bombercat', external: true },
+    logo: logoBombercat,
+    image: imageBombercat,
   },
   {
     name: 'Matching',
